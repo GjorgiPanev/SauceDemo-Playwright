@@ -24,4 +24,10 @@ export class LogInPage{
     async clickOnLogInButton(){
         await this.loginButton.click();
     }
+
+    async logInSauceDemo(username:string, password:string){
+        await this.username.fill(username);
+        await this.password.fill(password);
+        await this.loginButton.click();
+    }
 }
